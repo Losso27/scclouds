@@ -31,7 +31,7 @@ public class Main {
         }
         ArrayList<Integer> list = new ArrayList<Integer>();
         int flg;
-        for (int i = 2; i < n; i++){
+        for (int i = 2; i <= n; i++){
             flg = 1;
             for (int j : list){
                 if (i%j == 0){
