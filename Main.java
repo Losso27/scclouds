@@ -67,12 +67,12 @@ public class Main {
             return 1;
         }
         int result = 0;
-        int left = 0;
-        int right = 1;
+        int first = 0;
+        int second = 1;
         for (int i = 1; i < n; i ++){
-            result = left + right;
-            left = right;
-            right = result;
+            result = first + second;
+            first = second;
+            second = result;
         }
         return result;
     }
