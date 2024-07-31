@@ -9,6 +9,11 @@ public class Main {
         System.out.println(fib_recursive(5));
     }
 
+    /**
+     * recursive prime number list
+     * @param n the celling for the generated list
+     * @return a list of prime number from 2 until n
+     */
     static ArrayList<Integer> prime_recursive(int n){
         if(n <= 1){
             throw new IllegalArgumentException("Number should be higher than 1");
@@ -25,6 +30,12 @@ public class Main {
         list.add(n);
         return list;
     }
+
+    /**
+     * linear prime number list
+     * @param n the celling for the generated list
+     * @return a list of prime number from 2 until n
+     */
     static ArrayList<Integer> prime(int n){
         if(n <= 1){
             throw new IllegalArgumentException("Number should be higher than 1");
@@ -46,6 +57,11 @@ public class Main {
         return list;
     }
 
+    /**
+     * recursive fibonacci function it returns the value n of the fibonacci sequence
+     * @param n position in fibonacci sequence
+     * @return the number in the sequence
+     */
     static int fib_recursive(int n){
         if(n < 0){
             throw new IllegalArgumentException("Number should be positive");
@@ -59,6 +75,11 @@ public class Main {
         return fib_recursive(n-1) + fib_recursive(n-2);
     }
 
+    /**
+     * linear fibonacci function it returns the value n of the fibonacci sequence
+     * @param n position in fibonacci sequence
+     * @return the number in the sequence
+     */
     static int fib(int n){
         if(n < 0){
             throw new IllegalArgumentException("Number should be positive");
